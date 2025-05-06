@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     "target": "es2020",
     "module": "commonjs",
     "lib": ["es2020"],
@@ -8,4 +9,30 @@
     "moduleResolution": "node",
     "types": ["mocha", "chai", "node"]
   }
+=======
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "target": "ES6",
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+>>>>>>> f7045a14da845da28bc8013a8b1f7dc728d6b03b
 }
